@@ -3,6 +3,7 @@ const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
 import facultyRoutes from "./routes/faculty.routes.js";
+import libraryRoutes from "./routes/library.routes.js";
 
 const PORT = process.env.PORT || 8080;
 
@@ -15,6 +16,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/faculty', facultyRoutes);
+app.use('/library', libraryRoutes);
 
 app.listen(8080, () => {
     console.log(`server running on port ${PORT}`);
