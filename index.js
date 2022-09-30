@@ -13,6 +13,8 @@ app.get('/', (req, res) => {
     res.send('Home Page')
 })
 
+app.use('/students', studentRoutes);
+
 app.listen(8080, () => {
     console.log(`server running on port ${PORT}`);
 })
