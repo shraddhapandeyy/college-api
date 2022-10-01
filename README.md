@@ -24,7 +24,7 @@
     <a href="https://github.com/shraddhapandeyy/college-api"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://github.com/shraddhapandeyy/college-api">View Demo</a>
     ·
     <a href="https://github.com/shraddhapandeyy/college-api/issues">Report Bug</a>
     ·
