@@ -19,6 +19,6 @@ app.get("/", (req, res) => {
 app.use("/faculty", facultyRoutes);
 app.use("/library", libraryRoutes);
 
-app.listen(8080, () => {
+app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);
 });
