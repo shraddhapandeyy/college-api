@@ -89,7 +89,7 @@ Access our API endpoints to receive info about college.
 
 ## Roadmap
 
-See the [open issues](https://github.com/rahulkarda/crypto-info-api/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/shraddhapandeyy/college-api/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -119,15 +119,15 @@ Distributed under the GNU V3 License.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/rahulkarda/crypto-info-api.svg?style=for-the-badge
-[contributors-url]: https://github.com/rahulkarda/crypto-info-api/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/rahulkarda/crypto-info-api.svg?style=for-the-badge
-[forks-url]: https://github.com/rahulkarda/crypto-info-api/network/members
-[stars-shield]: https://img.shields.io/github/stars/rahulkarda/crypto-info-api.svg?style=for-the-badge
-[stars-url]: https://github.com/rahulkarda/crypto-info-api/stargazers
-[pullrequests-shield]: https://img.shields.io/github/issues-pr/rahulkarda/crypto-info-api?color=red&label=Pull%20Requests&style=for-the-badge
-[pullrequests-url]: https://github.com/rahulkarda/crypto-info-api/pulls
-[issues-shield]: https://img.shields.io/github/issues/rahulkarda/crypto-info-api.svg?style=for-the-badge
-[issues-url]: https://github.com/rahulkarda/crypto-info-api/issues
-[license-shield]: https://img.shields.io/github/license/rahulkarda/crypto-info-api.svg?style=for-the-badge
-[license-url]: https://github.com/rahulkarda/crypto-info-api/blob/master/LICENSE.md
+[contributors-shield]: https://img.shields.io/github/contributors/shraddhapandeyy/college-api.svg?style=for-the-badge
+[contributors-url]: https://github.com/shraddhapandeyy/college-api/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/shraddhapandeyy/college-api.svg?style=for-the-badge
+[forks-url]: https://github.com/shraddhapandeyy/college-api/network/members
+[stars-shield]: https://img.shields.io/github/stars/shraddhapandeyy/college-api.svg?style=for-the-badge
+[stars-url]: https://github.com/shraddhapandeyy/college-api/stargazers
+[pullrequests-shield]: https://img.shields.io/github/issues-pr/shraddhapandeyy/college-api?color=red&label=Pull%20Requests&style=for-the-badge
+[pullrequests-url]: https://github.com/shraddhapandeyy/college-api/pulls
+[issues-shield]: https://img.shields.io/github/issues/shraddhapandeyy/college-api.svg?style=for-the-badge
+[issues-url]: https://github.com/shraddhapandeyy/college-api/issues
+[license-shield]: https://img.shields.io/github/license/shraddhapandeyy/college-api.svg?style=for-the-badge
+[license-url]: https://github.com/shraddhapandeyy/college-api/blob/master/LICENSE.md
