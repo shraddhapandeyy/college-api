@@ -23,8 +23,10 @@ app.get("/", (req, res) => {
 app.use("/faculty", facultyRoutes);
 app.use("/library", libraryRoutes);
 
+var DB_URI = "mongodb://localhost:27017/"
+
 mongoose
-  .connect(process.env.MONGODB_URI, {
+  .connect(DB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
