@@ -1,4 +1,5 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
+
 
 const FacultySchema = new mongoose.Schema(
   {
@@ -17,9 +18,8 @@ const FacultySchema = new mongoose.Schema(
     },
     subjects: [
       {
-        name: String,
-        code: String,
-      },
+        type: String,
+      }
     ],
   },
   {
@@ -27,5 +27,5 @@ const FacultySchema = new mongoose.Schema(
     versionKey: false,
   }
 );
-
-export const User = mongoose.model("Faculty", FacultySchema);
+const User = mongoose.model("Faculty", FacultySchema);
+module.exports = User ; 

@@ -7,6 +7,11 @@ const express = require("express");
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
 const app = express();
+const mongoose = require("mongoose");
+
+require("dotenv").config();
+
+
 
 var connection = mysql.createConnection({
   host     : 'localhost',
@@ -38,6 +43,13 @@ app.use("/student", studentRoutes);
 app.use("/faculty", facultyRoutes);
 app.use("/library", libraryRoutes);
 
-app.listen(PORT, () => {
-  console.log(`server running on port ${PORT}`);
-});
+mongoose
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
+  .then(() => {
+    app.listen(PORT, () => console.log(`Server running on port ${PORT} \nDatabase connected`));
+  })
+  .catch((err) => console.log(err.message));
+
