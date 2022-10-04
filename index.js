@@ -1,8 +1,7 @@
-// import facultyRoutes from "./routes/faculty.routes.js";
-// ;import libraryRoutes from "./routes/library.routes.js";
+
 const facultyRoutes = require("./routes/facultyRoutes.js");
 const libraryRoutes = require("./routes/libraryRoutes.js");
-const studentRoutes = require("./routes/studentRoutes.js");
+//const studentRoutes = require("./routes/studentRoutes.js");
 const express = require("express");
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
@@ -39,7 +38,7 @@ app.get("/", (req, res) => {
   res.send("Home Page");
 });
 
-app.use("/student", studentRoutes);
+//app.use("/student", studentRoutes);
 app.use("/faculty", facultyRoutes);
 app.use("/library", libraryRoutes);
 
