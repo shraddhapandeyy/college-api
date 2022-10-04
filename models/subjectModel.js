@@ -40,5 +40,5 @@ const SubjectSchema = new mongoose.Schema(
     versionKey: false,
   }
 );
-const User = mongoose.model("Subject", SubjectSchema);
-module.exports = User; 
+const Subject = mongoose.model("Subject", SubjectSchema);
+module.exports = Subject; 
