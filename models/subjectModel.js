@@ -15,7 +15,13 @@ const SubjectSchema = new mongoose.Schema(
     },
     books: [
         {
-          type: String,
+          name: String,
+          id: {
+            type: String,
+            required: true,
+            unique: true,
+          },
+          author: String
         }
       ],
     mentors: [

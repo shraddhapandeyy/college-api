@@ -1,6 +1,7 @@
 
 const facultyRoutes = require("./routes/facultyRoutes.js");
 const libraryRoutes = require("./routes/libraryRoutes.js");
+const subjectRoute = require("./routes/subjectRoute.js");
 //const studentRoutes = require("./routes/studentRoutes.js");
 const express = require("express");
 const mysql = require("mysql");
@@ -41,6 +42,7 @@ app.get("/", (req, res) => {
 //app.use("/student", studentRoutes);
 app.use("/faculty", facultyRoutes);
 app.use("/library", libraryRoutes);
+app.use("/subject", subjectRoute);
 
 var DB_URI = "mongodb://localhost:27017/"
 
