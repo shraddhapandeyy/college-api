@@ -28,4 +28,4 @@ const FacultySchema = new mongoose.Schema(
   }
 );
 const User = mongoose.model("Faculty", FacultySchema);
-module.exports = User ; 
+module.exports = User; 

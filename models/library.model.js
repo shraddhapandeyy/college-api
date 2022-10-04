@@ -1,25 +1,17 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const LibrarySchema = new mongoose.Schema(
   {
-    name: {
-      type: String,
-      required: true,
-    },
-    id: {
-      type: String,
-      required: true,
-      unique: true,
-    },
     books: [
       {
-        name:String,
+        name: String,
         id: {
-          type:String,
+          type: String,
           required: true,
           unique: true,
         },
         author: String,
+        patron: String                  // Member username whom the book has been assigned to 
       }
     ],
     members: [
@@ -28,7 +20,7 @@ const LibrarySchema = new mongoose.Schema(
         username: {
           type: String,
           unique: true,
-          required: true,
+          // required: true,
         }
       },
     ],
@@ -39,4 +31,5 @@ const LibrarySchema = new mongoose.Schema(
   }
 );
 
-export const User = mongoose.model("Library", LibrarySchema);
+const Library = mongoose.model("Library", LibrarySchema);
+module.exports = Library
