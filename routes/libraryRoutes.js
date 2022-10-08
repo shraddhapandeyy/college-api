@@ -10,7 +10,7 @@ const {
   updateBook,
 } = require("../controllers/Librarys.js");
 
-const router = express.Router();
+const router = new express.Router();
 
 // Do crud operations here
 let Librarys = [];

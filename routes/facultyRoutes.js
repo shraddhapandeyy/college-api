@@ -1,7 +1,7 @@
 // faculty routes
 // import express from 'express';
 // import { addFaculty, deleteFaculty, getFaculty, getFacultys, updateFaculty } from '../controllers/Facultys.js';
-const express = require("express");
+const express = new require("express");
 const {
   addFaculty,
   deleteFaculty,
