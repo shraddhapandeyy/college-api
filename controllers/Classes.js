@@ -1,18 +1,18 @@
-const Subject = require("../models/subjectModel");
+const Class = require("../models/classesModel");
 
-exports.getSubjects=async(req,res)=>{
-    try{//finding all subjects
+exports.getClasses=async(req,res)=>{
+    try{//finding all Classes
         
-        const subjects=await Subject.find();
+        const Classes=await Class.find();
 
-        return res.json(subjects);
+        return res.json(Classes);
     }
     catch(err){
         return res.status(400).send("Some Error Occured");
     }
 }
 
-exports.addSubject = async (req, res) => {
+exports.addClass = async (req, res) => {
   const body = req.body;
   if (!body) {
     return res.status(400).send("Please send details");
@@ -21,23 +21,23 @@ exports.addSubject = async (req, res) => {
   const name = body.name;
   const code = body.code;
   const mentors = body.mentors;
-  const books = body.books;
-  const syllabus = body.syllabus;
+  const room = body.room;
+  const date = body.date;
  
-  try {// creating new subject
-    await Subject.create({
-      name,code,mentors,books,syllabus
+  try {// creating new Class
+    await Class.create({
+      name,code,mentors,room,date
     });
-    return res.status(200).send("Subject sucessfully added to Database");
+    return res.status(200).send("Class sucessfully added to Database");
   } catch (error) {
     return res.status(400).send("Some Error Occured")
   }
 };
 
-exports.getSubject = async (req, res) => {
-    try {// get subject
+exports.getClass = async (req, res) => {
+    try {// get Class
 
-        await Subject.findById(req.params.id,
+        await Class.findById(req.params.id,
             function (err, docs) {
                 if (err) {
                   console.log(err);
@@ -50,26 +50,26 @@ exports.getSubject = async (req, res) => {
            return res.status(400).send("Some Error Occured")
          }};
 
-exports.deleteSubject = async (req, res, next) => {
-    try {// deleting subject
+exports.deleteClass = async (req, res, next) => {
+    try {// deleting Class
 
-     await Subject.findByIdAndDelete(req.params.id);
-        return res.status(200).send("Subject sucessfully deleted");
+     await Class.findByIdAndDelete(req.params.id);
+        return res.status(200).send("Class sucessfully deleted");
       } catch (error) {
         return res.status(400).send("Some Error Occured")
       }
 };
 
-exports.updateSubject = async (req, res, next) => {
-    try {// update subject
+exports.updateClass = async (req, res, next) => {
+    try {// update Class
 
-        await Subject.findByIdAndUpdate(req.params.id,
+        await Class.findByIdAndUpdate(req.params.id,
             {$set:req.body},
             function (err, docs) {
                 if (err) {
                   console.log(err);
                 } else {
-                  res.status(200).send("Subject got updated"
+                  res.status(200).send("Class got updated"
                   );
                 }
               }
